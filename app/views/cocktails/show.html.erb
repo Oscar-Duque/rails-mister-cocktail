@@ -3,6 +3,7 @@
 <p>
   <strong>Name:</strong>
   <%= @cocktail.name %>
+  <%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill %>
 </p>
 <ul>
   <% @cocktail.doses.each do |dose| %>
